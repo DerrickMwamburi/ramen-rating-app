@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍜 Ramen Rating App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>🍜 Ramen Rating App 🍜</h1>
+        <p>Discover, rate, and share your favorite ramen dishes!</p>
+    </header>
+
+    <!-- Ramen Gallery Section -->
+    <section id="ramen-gallery">
+        <h2>🥢 Select Your Ramen 🥢</h2>
+        <div id="ramen-menu"></div>
+    </section>
+
+    <!-- Ramen Details Section -->
+    <section id="ramen-detail-container">
+        <h2>🍥 Ramen Details 🍥</h2>
+        <div id="ramen-detail">
+            <h3 id="ramen-name">Select a ramen</h3>
+            <p id="ramen-restaurant"></p>
+            <img id="ramen-image" src="" alt="Ramen Image">
+            <p><strong>Rating:</strong> <span id="ramen-rating">N/A</span></p>
+            <p><strong>Comment:</strong> <span id="ramen-comment">N/A</span></p>
+        </div>
+    </section>
+
+    <!-- Add New Ramen Form -->
+    <section id="add-ramen-section">
+        <h2>➕ Add a New Ramen ➕</h2>
+        <form id="new-ramen-form">
+            <input type="text" id="new-name" placeholder="Ramen Name 🍜" required>
+            <input type="text" id="new-restaurant" placeholder="Restaurant Name 🏮" required>
+            <input type="text" id="new-image" placeholder="Image URL 📸" required>
+            <input type="number" id="new-rating" placeholder="Rating (1-5) ⭐" min="1" max="5" required>
+            <textarea id="new-comment" placeholder="Add a comment ✍️" required></textarea>
+            <button type="submit">Add Ramen</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Ramen Lovers | &copy; 2025</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
